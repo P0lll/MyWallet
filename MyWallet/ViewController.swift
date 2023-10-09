@@ -7,7 +7,7 @@
 import SnapKit
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,6 @@ class ViewController: UIViewController {
             }
         }
     }
-
     // MARK: Private properties
     private var tableView = UITableView()
     private var data: [Datum] = []
@@ -39,8 +38,8 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        let textValue = data[indexPath.row]
-        cell.textLabel?.text = "\(textValue)"
+        let data = data[indexPath.row]
+        cell.textLabel?.text = "\(data.name) - \(data.priceUsd) USD \(data.priceBtc)"
         
         return cell
     }
