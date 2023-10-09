@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E94ADEAF2AD438B900C86045 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94ADEAE2AD438B900C86045 /* HomeViewController.swift */; };
+		E94ADEB12AD438CC00C86045 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94ADEB02AD438CC00C86045 /* SecondViewController.swift */; };
+		E94ADEB42AD4418300C86045 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94ADEB32AD4418300C86045 /* MainTabBarController.swift */; };
+		E94ADEB62AD441CC00C86045 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94ADEB52AD441CC00C86045 /* ThirdViewController.swift */; };
+		E94ADEB82AD4627F00C86045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94ADEB72AD4627F00C86045 /* Main.storyboard */; };
 		E975D55B2ACDD54D003C9F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975D55A2ACDD54D003C9F64 /* AppDelegate.swift */; };
 		E975D55D2ACDD54D003C9F64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975D55C2ACDD54D003C9F64 /* SceneDelegate.swift */; };
-		E975D55F2ACDD54D003C9F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E975D55E2ACDD54D003C9F64 /* ViewController.swift */; };
-		E975D5622ACDD54D003C9F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E975D5602ACDD54D003C9F64 /* Main.storyboard */; };
 		E975D5642ACDD54E003C9F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E975D5632ACDD54E003C9F64 /* Assets.xcassets */; };
 		E975D5672ACDD54E003C9F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E975D5652ACDD54E003C9F64 /* LaunchScreen.storyboard */; };
 		E975D5722ACDE220003C9F64 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E975D5712ACDE220003C9F64 /* SnapKit */; };
@@ -19,11 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E94ADEAE2AD438B900C86045 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E94ADEB02AD438CC00C86045 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E94ADEB32AD4418300C86045 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E94ADEB52AD441CC00C86045 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		E94ADEB72AD4627F00C86045 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E975D5572ACDD54D003C9F64 /* MyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E975D55A2ACDD54D003C9F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E975D55C2ACDD54D003C9F64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E975D55E2ACDD54D003C9F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E975D5612ACDD54D003C9F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E975D5632ACDD54E003C9F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E975D5662ACDD54E003C9F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E975D5682ACDD54E003C9F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +58,17 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		E94ADEB22AD43A0D00C86045 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E94ADEB32AD4418300C86045 /* MainTabBarController.swift */,
+				E94ADEAE2AD438B900C86045 /* HomeViewController.swift */,
+				E94ADEB02AD438CC00C86045 /* SecondViewController.swift */,
+				E94ADEB52AD441CC00C86045 /* ThirdViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E975D54E2ACDD54D003C9F64 = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +90,11 @@
 			children = (
 				E975D55A2ACDD54D003C9F64 /* AppDelegate.swift */,
 				E975D55C2ACDD54D003C9F64 /* SceneDelegate.swift */,
-				E975D55E2ACDD54D003C9F64 /* ViewController.swift */,
+				E94ADEB22AD43A0D00C86045 /* View */,
 				E94ADEAD2AD17F1700C86045 /* Api */,
-				E975D5602ACDD54D003C9F64 /* Main.storyboard */,
 				E975D5632ACDD54E003C9F64 /* Assets.xcassets */,
 				E975D5652ACDD54E003C9F64 /* LaunchScreen.storyboard */,
+				E94ADEB72AD4627F00C86045 /* Main.storyboard */,
 				E975D5682ACDD54E003C9F64 /* Info.plist */,
 			);
 			path = MyWallet;
@@ -147,9 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94ADEB82AD4627F00C86045 /* Main.storyboard in Resources */,
 				E975D5672ACDD54E003C9F64 /* LaunchScreen.storyboard in Resources */,
 				E975D5642ACDD54E003C9F64 /* Assets.xcassets in Resources */,
-				E975D5622ACDD54D003C9F64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,24 +178,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E975D5742ACDE86E003C9F64 /* ApiManager.swift in Sources */,
-				E975D55F2ACDD54D003C9F64 /* ViewController.swift in Sources */,
+				E94ADEB62AD441CC00C86045 /* ThirdViewController.swift in Sources */,
+				E94ADEB42AD4418300C86045 /* MainTabBarController.swift in Sources */,
 				E975D55B2ACDD54D003C9F64 /* AppDelegate.swift in Sources */,
 				E975D55D2ACDD54D003C9F64 /* SceneDelegate.swift in Sources */,
+				E94ADEB12AD438CC00C86045 /* SecondViewController.swift in Sources */,
 				E975D5762ACDF028003C9F64 /* CryptoData.swift in Sources */,
+				E94ADEAF2AD438B900C86045 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E975D5602ACDD54D003C9F64 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E975D5612ACDD54D003C9F64 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E975D5652ACDD54E003C9F64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -314,11 +326,14 @@
 				DEVELOPMENT_TEAM = A8Q2Q8MWGU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWallet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -346,11 +361,14 @@
 				DEVELOPMENT_TEAM = A8Q2Q8MWGU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWallet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

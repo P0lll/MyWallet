@@ -1,22 +1,30 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  MyWallet
 //
-//  Created by Pavel Bukatin on 04.10.2023.
+//  Created by Pavel Bukatin on 09.10.2023.
 //
+
 import SnapKit
 import UIKit
 
-final class ViewController: UIViewController {
 
+class SecondViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
-        tableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
+        view.backgroundColor = .systemRed
+        
+        tableView = UITableView()
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        view.addSubview(tableView)
+        
+        tableView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+            
+        }
         
         ApiManager.shared.getCoinPrice { [weak self] values in
             DispatchQueue.main.async {
@@ -31,7 +39,7 @@ final class ViewController: UIViewController {
     private var data: [Datum] = []
 }
 // MARK: - UITableViewDataSource
-extension ViewController: UITableViewDataSource {
+extension SecondViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         data.count
     }
@@ -43,7 +51,8 @@ extension ViewController: UITableViewDataSource {
         
         return cell
     }
-    
 }
+        
+
 
 
